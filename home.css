@@ -1,0 +1,743 @@
+@font-face {
+    font-family: 'Miama';
+    src: url(font/miama/Miama.ttf);
+}
+
+
+body, div, h1, h2, h3, h4, h5, h6, p, ol, ul, blockquote, figure{
+    margin:0;
+    padding:0;
+    font-weight: normal;
+    font-size: unset;
+}
+body{
+    position: relative;
+    max-width: 1920px;
+    margin:0 auto;
+    font-family: 'Manrope', sans-serif;
+    -webkit-text-size-adjust: 100%;
+    background-color:#fff;
+    color:#000;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+li{
+    list-style-type: none;
+}
+html {
+    scroll-behavior: smooth;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+.flex{
+    display: flex;
+}
+.flex.column{
+    flex-direction: column;
+}
+.flex.centered{
+    align-items: center;
+}
+.flex.space{
+    justify-content: space-between;
+}
+.main-header{
+    position: relative;
+}
+.main-img{
+    width:100%;
+    height:100vh;
+}
+
+.main-img img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.header-wrapper h1{
+    position:absolute;
+    bottom: 45%;
+    right: 150px;
+    color: #fff;
+    font-size: 130px;
+    font-family: 'Advent Pro',sans-serif;
+    font-weight: 100;
+}
+.header-wrapper h1:first-of-type{
+    left: 150px;
+    bottom: 35%;
+}
+.menu{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: #fff;
+    font-size: 22px;
+    text-align: right;
+}
+.date{
+    position: absolute;
+    bottom: 100px;
+    left: 10px;
+    right: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 100px;
+    font-family: 'Corinthia', cursive;
+}
+.invite-wrapper{
+    text-align: center;
+    font-size: 43px;
+    position: relative;
+    z-index: 1;
+    padding: 100px 100px 50px;
+    height:100%;
+    justify-content: space-between;
+}
+.people{
+    justify-content: space-between;
+    padding: 60px;
+}
+.us h4{
+    font-family: 'Miama', sans-serif;
+    font-size: 76px;
+    padding-top: 60px;
+}
+.koump h3, .parents h3{
+    padding-bottom: 14px;
+    font-size: 35px;
+
+}
+.countdown-wrapper{
+    text-align: center;
+}
+.cntdn-text h2{
+    font-size:64px;
+    padding-bottom: 30px;
+    font-family: 'Advent Pro',sans-serif;
+    font-weight: 100;
+}
+.cntdn{
+    font-size:120px;
+    position: relative;
+    z-index: 1;
+    font-family: 'Miama', sans-serif;
+
+}
+#countdown{
+    line-height: 110px;
+}
+.countdown-wrapper{
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.date-down{
+    padding: 50px 100px 0;
+    transition: all 0.5s ease-in-out;
+    border: none;
+}
+.date-down:hover span{
+    border-bottom:1px solid #000;
+    transition: all 0.5s ease-in-out;
+}
+.date-down span{
+    font-size: 22px;
+}
+.location-wrapper{
+    text-align: center;
+    padding: 50px 100px;
+}
+.location-wrapper h2{
+    font-weight: 100;
+    text-align: left;
+    font-family: 'Advent Pro',sans-serif;
+    font-size: 100px;
+}
+.dhms .days{
+    padding-left:65px;
+    padding-right:30px
+}
+.dhms .hours{
+    padding:0 40px;
+}
+.dhms .min{
+    padding: 0 40px;
+}
+.dhms .sec{
+    padding: 0 20px;
+}
+.location-wrapper img{
+    width:50px;
+}
+.church-text, .party-text, .church-map, .party-map{
+    width:calc(100%/2);
+    font-size:40px;
+}
+.church-map iframe, .party-map iframe{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 2;
+}
+.party-wrapper{
+    flex-direction: row-reverse;
+}
+.church-wrapper{
+    padding-top:50px;
+}
+.church-text h3, .party-text h3{
+    color: #5b5b5b;
+}
+.rsvp-wrapper{
+    text-align: center;
+    padding:50px 100px;
+    height:100%;
+}
+.rsvp-wrapper h2{
+    font-size: 130px;
+    font-style: italic;
+    line-height: 70px;
+    font-weight: 100;
+    font-family: 'Advent Pro',sans-serif;
+    text-align: right;
+    color: #5b5b5b;
+}
+.rsvp-wrapper h3{
+    font-size: 23px;
+    text-align: left;
+    padding-top: 15px;
+}
+.rsvp-form input, .rsvp-form select, .rsvp-form textarea{
+    width:100%;
+    outline: none;
+    border: none;
+    border-bottom:1px solid #000;
+    font-size:20px;
+    padding:10px;
+    margin-bottom:20px;
+    font-family: 'Manrope',sans-serif;
+    background-color: transparent;
+}
+.rsvp-form select#adults , .rsvp-form select#kids{
+    width:40%;
+}
+.rsvp-form{
+    padding-top: 70px;
+}
+.send-btn{
+    justify-content: center;
+    margin:20px;
+    align-items: center;
+}
+.send-btn span{
+    margin-left:20px;
+    font-size:16px;
+    display: none;
+}
+.rsvp-form label{
+    font-size:20px;
+}
+.rsvp-form .send-btn button{
+    width:unset;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    font-size:18px;
+    padding:10px;
+    transition: all 0.4s ease-in-out;
+}
+.rsvp-form .send-btn button:hover{
+    background-color: #d5d5d5;
+    border:1px solid #000;
+    transition: all 0.4s ease-in-out;
+}
+.rsvp-form textarea{
+    min-height: 100px;
+    resize: none;
+}
+.download-invitation{
+    font-size: 20px;
+    padding:20px;
+}
+.download-invitation a{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.download-invitation img{
+    width:30px;
+    margin-left:20px;
+}
+.people h4{
+    font-size: 28px;
+}
+.startgame-wrapper{
+    text-align: center; 
+    width: calc((100% - 25px) / 3);
+    border:1px solid #000;
+    border-radius: 10px;
+    aspect-ratio: 2;
+    transition: all 0.5s ease-in-out;
+    justify-content: center;
+}
+.start{
+    font-size: 35px;
+}
+.startgame-wrapper h3{
+    font-size: 23px;
+}
+.buttons{
+    justify-content: space-evenly;
+    padding: 0 50px 100px;
+    height:100%;
+    position: relative;
+    z-index:1;
+}
+.instagram-feed-wrapper{
+    width: calc((100% - 50px) / 3);
+    text-align: center;
+    font-size: 23px;
+    border:1px solid #000;
+    border-radius: 10px;
+    aspect-ratio: 2;
+    transition: all 0.5s ease-in-out;
+    justify-content: center;
+}
+.section-title{
+    padding: 50px 100px;
+    font-size: 60px;
+    font-family: 'Advent Pro', sans-serif;
+}
+.section-title h2{
+    font-weight:100;
+}
+.back{
+    transform: rotate(-90deg);
+    transform-origin: left;
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+    z-index:1;
+}
+.glitter-middle{
+    position: absolute;
+    top: -20%;
+    right: 0;
+    z-index: 0;
+}
+.startgame-wrapper:hover , .instagram-feed-wrapper:hover{
+    background-color: #d5d5d5;
+    transition: all 0.5s ease-in-out;
+}
+
+.dark{
+    color:#000;
+}
+
+.soon{
+    text-align: center;
+    height: 74vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 30px;
+    background: #d5d5d5;
+}
+.soon h2{
+    font-size: 120px;
+    font-family: 'Advent Pro',sans-serif;
+}
+.soon h3{
+    font-size:25px;
+}
+.footer-wrapper{
+    padding:20px 0;
+    margin: 0 20px;
+    border-top: 1px solid #000;
+}
+
+.container {
+    width: 50%;
+    justify-content: center;
+    padding: 100px;
+  }
+  
+.container h1 {
+    font-size: 35px;
+    padding-bottom: 50px;
+}
+  
+.question {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+  
+.options {
+    margin-bottom: 20px;
+}
+  
+.option {
+    display: block;
+    margin-bottom: 10px;
+}
+  
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d5d5d5;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+    width: 200px;
+    font-family: 'Manrope' , sans-serif;
+}
+  
+.button:hover {
+    background-color: #000;
+    color: #fff;
+}
+  
+.result {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+  
+.hide{
+    display: none;
+}
+.image-gallery{
+    width: 50%;
+    justify-content: space-around;
+}
+.image-gallery img{
+    width: 40%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 150px 150px 0 0;
+    filter: grayscale(1) contrast(1.1) brightness(1.1);
+}
+.image-gallery img:last-of-type{
+    align-self: flex-end;
+    margin-bottom: 40px;
+}
+.rest-header .menu{
+    position: relative;
+    top:0;
+    right:0;
+}
+.rest-header{
+    justify-content: space-between;
+    padding: 30px;
+}
+.quiz-wrapper{
+    height:calc(100vh - 211px);
+}
+.our-logo{
+    font-size: 25px;
+}
+#quiz{
+    font-size: 19px;
+}
+
+@media screen and (max-width:1200px){
+    .location-wrapper, .rsvp-wrapper,.section-title{
+        padding: 50px;
+    }
+    .invite-wrapper{
+        padding: 100px 50px 50px;
+    }
+    .church-text h3, .party-text h3{
+        font-size: 30px;
+    }
+    .location-wrapper h2{
+        font-size:80px;
+    }
+    .rsvp-wrapper h2 {
+        font-size: 100px;
+    }
+}
+
+@media screen and (max-width:1100px){
+    
+    .startgame-wrapper h3{
+        font-size:18px;
+    }
+    .start{
+        font-size:30px;
+    }
+    .header-wrapper h1:first-of-type{
+        bottom:30%;
+    }
+    .image-gallery img{
+        height:50%;
+    }
+}
+
+@media screen and (max-width:900px){
+    .invite-wrapper{
+        font-size:30px;
+    }
+    .people h4 {
+        font-size: 24px;
+    }
+    .koump h3, .parents h3{
+        font-size:29px;
+    }
+    .people{
+        padding: 30px 0;
+    }
+    .rsvp-form select#adults, .rsvp-form select#kids{
+        width:100%;
+    }
+    .instagram-feed-wrapper,
+    .startgame-wrapper{
+        aspect-ratio: 1;
+        padding:15px;
+        width:calc((100% - 50px) / 2);
+    }
+    .container{
+        padding:50px;
+    }
+    .container h1 {
+        font-size: 28px;
+    }
+    #quiz {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:768px){
+    .cntdn-text h2{
+        font-size:50px;
+    }
+    .us h4{
+        padding-top:20px;
+        font-size: 69px;
+    }
+    .dhms{
+        min-width: 500px;
+        margin-top:-30px;
+    }
+    .cntdn{
+        font-size:80px;
+    }
+    .date-down{
+        padding: 0px 15px 70px;
+    }
+    .dhms .hours , .dhms .min , .dhms .sec{
+        padding: 0 20px;
+    }
+    .countdown-wrapper {
+        padding-bottom: 50px;
+    }
+    .invite-wrapper{
+        padding:50px 30px;
+    }
+    .location-wrapper, .rsvp-wrapper, .section-title{
+        padding:30px;
+    }
+    .church-text h3, .party-text h3 {
+        font-size: 23px;
+    }
+    .church-text, .party-text, .church-map, .party-map{
+        font-size:30px;
+    }
+    .rsvp-wrapper h2 {
+        font-size: 80px;
+    }
+    .location-wrapper h2 {
+        font-size: 60px;
+    }
+    .rsvp-wrapper h3{
+        font-size:20px;
+    }
+    .rsvp-form{
+        padding-top:40px;
+    }
+    .section-title{
+        font-size: 50px;
+    }
+    .instagram-feed-wrapper{
+        font-size:20px;
+    }
+    .buttons{
+        padding:0 30px 70px;
+    }
+    .header-wrapper h1{
+        width: 100%;
+        right: 0;
+        text-align: center;
+        font-size: 90px;
+    }
+    .header-wrapper h1:first-of-type{
+        width: 100%;
+        left: 0;
+        text-align: center;
+    }
+    .date{
+        font-size: 75px;
+    }
+    .invite-wrapper {
+        font-size: 25px;
+    }
+    .people h4 {
+        font-size: 20px;
+    }
+    .koump h3, .parents h3 {
+        font-size: 23px;
+    }
+    .church-map iframe, .party-map iframe{
+        aspect-ratio: 1;
+    }
+    .quiz-wrapper{
+        height:100%;
+        flex-direction: column;
+    }
+    .image-gallery{
+        width:100%;
+    }
+    .container{
+        width:100%;
+    }
+    .image-gallery img{
+        height: 400px;
+    }
+    .container{
+        padding-top:30px;
+    }
+}
+@media screen and (max-width:600px){
+    .us h4{
+        font-size:60px;
+    }
+    .parents{
+        padding-bottom: 35px;
+    }
+    .people{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:500px){
+    .buttons{
+        flex-direction: column;
+    }
+    .instagram-feed-wrapper, .startgame-wrapper{
+        width:100%;
+        aspect-ratio: 2;
+    }
+    .startgame-wrapper{
+        margin-bottom:20px;
+    }
+    .dhms .sec{
+        padding:0;
+    }
+    .dhms .days{
+        padding-right:0;
+        padding-left: 0;
+    }
+    .dhms .hours, .dhms .min{
+        padding:0;
+    }
+    .dhms{
+        width:88%;
+        min-width: unset;
+    }
+    .cntdn-text h2{
+        padding-bottom: 20px;
+    }
+    .cntdn {
+        font-size: 60px;
+    }
+    .cntdn-text h2 {
+        font-size: 35px;
+    }
+    .header-wrapper h1:first-of-type {
+        bottom: 40%;
+    }
+    .header-wrapper h1{
+        font-size: 70px;
+        bottom: 50%;
+    }
+    .date {
+        font-size: 55px;
+        bottom: 155px;
+    }
+    .menu{
+        top:20px;
+        right:20px;
+        font-size:18px;
+    }
+    .invite-wrapper {
+        padding: 30px 20px;
+    }
+    .us h4 {
+        font-size: 55px;
+    }
+    .church-wrapper , .party-wrapper{
+        padding-top: 30px;
+        flex-direction: column;
+    }
+    .countdown-wrapper{
+        padding-bottom:0;
+    }
+    .church-text, .party-text, .church-map, .party-map{
+        width:100%;
+        padding-bottom: 20px;
+    }
+    .party-wrapper{
+        border-top: 1px solid #000;
+    }
+    .location-wrapper, .rsvp-wrapper, .section-title{
+        padding:20px;
+    }
+    .rsvp-wrapper h2 {
+        font-size: 60px;
+    }
+    .rsvp-form input, .rsvp-form select, .rsvp-form textarea{
+        font-size:18px;
+    }    
+    .image-gallery img:first-of-type{
+        border-radius: 150px 150px 0 300px;
+    }
+    .image-gallery img:last-of-type{
+        border-radius: 150px 150px 300px 0;
+        margin-bottom: 0;
+    }
+    .image-gallery{
+        justify-content: center;
+        padding: 30px 10px;
+    }
+    .image-gallery img{
+        width:50%;
+        height: unset;
+    }
+    .rest-header{
+        padding:20px;
+    }
+    .container{
+        padding: 30px 20px;
+    }
+    .soon{
+        padding: 60px 30px;
+    }
+    .soon h2{
+        font-size: 80px;
+    }
+    .soon h3 {
+        font-size: 20px;
+    }
+}

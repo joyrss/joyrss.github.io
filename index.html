@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="el">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+        <title>D & K</title>
+        <link rel="stylesheet" href="home.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Corinthia:wght@700&family=Manrope&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <header class="main-header" id="top">
+            <div class="main-img">
+                <img src="img/Image from iOS (3).jpg">
+                <div class="gradient"></div>
+            </div>
+            <div class="header-wrapper">
+                <h1>Κατερίνα</h1>
+                <h1>Δημήτρης</h1>
+            </div>
+            <ul class="menu">
+                <li><a href="#invite">Ο γάμος</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="instagram-feed.html">Instagram feed</a></li>
+            </ul>
+            <div class="date">
+                <span>29.12.2023</span>
+            </div>
+        </header>
+        <main>
+            
+            <section class="invite" id="invite">
+                <div class="invite-wrapper flex column">
+                    <div class="us">
+                        <h3>Με μεγάλη μας χαρά σας προσκαλούμε στο γάμο μας</h3>
+                        <h4 id="us"></h4>
+                    </div>
+                    <div class="people flex">
+                        <div class="parents">
+                            <h3>ΟΙ ΓΟΝΕΙΣ</h3>
+                            <h4>Παπαγεωργίου Βασίλης & Ευφροσύνη <br>
+                                Ρατσιάτος Νίκος & Νεκταρία</h4>
+                        </div>
+                        <div class="koump">
+                            <h3>ΟΙ ΚΟΥΜΠΑΡΟΙ</h3>
+                            <h4>Δημήτρης Μυλωνάς <br>
+                                Ερίνα Νεοπούλου</h4>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="countdown-wrapper flex column " id="cntdn">
+                <div class="cntdn-text">
+                    <h2>Σας περιμένουμε σε</h2>
+                </div>
+                <div class="cntdn">
+                    <div id="countdown"></div>
+                </div>
+                <div class="date-down">
+                    <a href="#" id="addToCalendar"><span>Προσθήκη ημερομηνίας στο ημερολόγιο</span></a>
+                </div>
+            </section>
+            <section class="location-wrapper" id="location">
+                <h2>Τοποθεσία</h2>
+                <div class="church-wrapper flex centered space">
+                    <div class="church-text">
+                        <span>18:30</span>
+                        <h3>Ι.Ν. Παναγίας Μαρμαριωτίσσης <br>
+                            Χαλάνδρι </h3>
+                    </div>
+                    <div class="church-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.3484220195533!2d23.795423476037275!3d38.01565599824762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a19859cf04efad%3A0x308432873ec3b0c5!2zzpnOtc-Bz4zPgiDOnc6xz4zPgiDOoM6xzr3Osc6zzq_Osc-CIM6czrHPgc68zrHPgc65z4nPhM6vz4PPg863z4I!5e0!3m2!1sel!2sgr!4v1697626937517!5m2!1sel!2sgr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="party-wrapper flex centered space">
+                    <div class="party-text">
+                        <span>20:00</span>
+                        <h3>Κτήμα Αργιθέα, 
+                            <br>Παιανία</h3>
+                    </div>
+                    <div class="party-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.9100050018237!2d23.8813379760357!3d37.97922950035614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a19747cd3a5931%3A0xbebcf042e6227a79!2zzprPhM6uzrzOsSDOkc-BzrPOuc64zq3OsQ!5e0!3m2!1sel!2sgr!4v1697627037333!5m2!1sel!2sgr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </section>
+            <section class="rsvp-wrapper" id="rsvp">
+                <h2>RSVP</h2>
+                <h3>Παρακαλούμε ενημερώστε μας για την παρουσία σας μέχρι 30/11/2023</h3>
+                <h3>Θα χαρούμε πολύ να σας δούμε!</h3>
+                <form class="rsvp-form" action="https://formspree.io/f/xqkvnovj"
+                method="POST">
+                    <input type="text" id="name" name="name" placeholder="Ονοματεπώνυμο*" required>
+                    <input type="email" id="email" name="email" placeholder="Email*" required>
+                    <input type="tel" id="tel" name="phone" placeholder="Τηλέφωνο Επικοινωνίας*" required>
+                    <label for="attend">Θα παρευρεθώ:*</label>
+                    <select id="attend" name="attend" required>
+                        <option disabled selected value> -- παρακαλώ διαλέξτε -- </option>
+                        <option value="yes">Ναι</option>
+                        <option value="no">Όχι</option>
+                    </select>
+                    <label for="adults">Ενήλικοι</label>
+                    <select id="adults" name="adults" required>
+                        <option disabled selected value> -- παρακαλώ διαλέξτε -- </option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="2">3</option>
+                        <option value="2">4</option>
+                    </select>
+                    <label for="kids">Παιδιά</label>
+                    <select id="kids" name="kids">
+                        <option disabled selected value> -- παρακαλώ διαλέξτε -- </option>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="2">3</option>
+                        <option value="2">4</option>
+                    </select>
+                    <textarea id="message" name="message" placeholder="Σχόλια"></textarea>
+                    <div class="send-btn flex">
+                        <button type="submit" name="submit">ΥΠΟΒΟΛΗ</button>
+                        <span></span>
+                    </div>
+                </form> 
+                <div class="download-invitation">
+                    <a href="invitation/dimitriskaterina.pdf" 
+                    download="Προσκλητήριο">Κατεβάστε το προσκλητήριό σας
+                    <img src="icons/icons8-download-100.png">
+                    </a>
+                </div>
+            </section>
+            <section>
+                <div class="section-title">
+                    <h2>Περισσότερα</h2>
+                </div>
+                <div class="buttons flex centered">
+                    <div class="startgame-wrapper flex column">
+                        <a href="quiz.html">
+                            <div class="start">
+                                LET'S PLAY
+                            </div>
+                            <h3>Πόσο καλά μας γνωρίζετε;</h3>
+                        </a>
+                    </div>
+                    <div class="instagram-feed-wrapper flex column">
+                        <a href="instagram-feed.html">
+                            <h3> #ThePapWedding 
+                                <br>Instagram Feed
+                            </h3>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!--<div class="back">
+                <span><a href="#top">back to top </a></span>
+            </div>-->
+        </main>
+
+        <footer>
+            <div class="footer-wrapper">
+                <div class="copyrights flex column">
+                    <span>Copyrights &copy; 2023 | All rights reserved</span>
+                    <span>Designed & Developed by joyrss</span>
+                </div>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+        
+    </body>
+</html>
