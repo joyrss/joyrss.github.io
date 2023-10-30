@@ -54,7 +54,17 @@ document.getElementById('addToCalendar').addEventListener('touchstart', function
   link.setAttribute('download', 'event.ics');
   document.body.appendChild(link);
   link.click();
+  
+  document.body.removeChild(link);
 });
+
+addToCalendarButton.addEventListener('touchstart', function(event) {
+    event.preventDefault(); 
+    addToCalendarHandler(event);
+});
+
+
+addToCalendarButton.addEventListener('click', addToCalendarHandler);
 
 //type effect
 
