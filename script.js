@@ -25,9 +25,6 @@ if (distance < 0) {
 
 var addToCalendarButton = document.getElementById('addToCalendar');
 
-function addToCalendarHandler(event){
-var addToCalendarButton = document.getElementById('addToCalendar');
-
 function addToCalendarHandler(event) {
   var eventDate = '20231229T183000'; // Format: YYYYMMDDTHHMMSS
   var eventName = 'Δημήτρης & Κατερίνα';
