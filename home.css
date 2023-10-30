@@ -454,7 +454,35 @@ html {
 #quiz{
     font-size: 19px;
 }
-
+.check{
+    background: #fff;
+    height:100vh;
+}
+.checkpass{
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 26%;
+    left: 11%;
+    right: 11%;
+    text-align: left;
+    margin: auto auto;
+    border: 1px solid #000;
+    justify-content: space-evenly;
+    background: #d5d5d5;
+}
+.checkpass button{
+    width: 100px;
+    height: 35px;
+}
+.checkpass input{
+    height: 45px;
+    font-size: 18px;
+}
+.checkpass h1{
+    font-size:25px;
+}
 @media screen and (max-width:1200px){
     .location-wrapper, .rsvp-wrapper,.section-title{
         padding: 50px;
@@ -741,4 +769,10 @@ html {
     .soon h3 {
         font-size: 20px;
     }
+    .checkpass{
+        width: 90%;
+        left: 0;
+        right: 0;
+    }
+    
 }
