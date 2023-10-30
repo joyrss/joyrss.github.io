@@ -774,5 +774,7 @@ html {
         left: 0;
         right: 0;
     }
-    
+    .date-down span{
+        border:1px solid #000;
+    }
 }
