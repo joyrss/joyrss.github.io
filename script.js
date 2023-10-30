@@ -26,7 +26,7 @@ if (distance < 0) {
 var addToCalendarButton = document.getElementById('addToCalendar');
 
 function addToCalendarHandler(event){
-  /* var eventDate = '20231229T183000'; // Format: YYYYMMDDTHHMMSS
+  var eventDate = '20231229T183000'; // Format: YYYYMMDDTHHMMSS
   var eventName = 'Δημήτρης & Κατερίνα';
   var eventDescription = 'Γάμος Δημήτρη & Κατερίνας';
   var eventLocation = '';
@@ -58,26 +58,7 @@ function addToCalendarHandler(event){
   link.click();
   
   document.body.removeChild(link);
-  */
-  var startDate = new Date('2023-12-29T18:30:00'); 
-    var eventName = 'Δημήτρης & Κατερίνα';
-    var eventLocation = 'Event Location';
-    var eventDescription = 'Γάμος Δημήτρη & Κατερίνας';
-
-    var options = {
-        title: eventName,
-        location: eventLocation,
-        description: eventDescription,
-        start: startDate,
-        allDay: false 
-    };
-
-    try {
-        var calendar = window.calendar;
-        calendar.createEvent(options);
-    } catch (error) {
-        console.error('Error creating event:', error);
-    }
+  
 };
 
 addToCalendarButton.addEventListener('touchstart', function(event) {
