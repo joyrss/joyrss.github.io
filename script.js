@@ -23,7 +23,7 @@ if (distance < 0) {
 
 //add event to calendar
 
-document.getElementById('addToCalendar').addEventListener('click', function() {
+document.getElementById('addToCalendar').addEventListener('touchstart', function() {
   var eventDate = '20231229T120000'; // Format: YYYYMMDDTHHMMSS
   var eventName = 'Your Event Name';
   var eventDescription = 'Description of the event';
