@@ -23,7 +23,9 @@ if (distance < 0) {
 
 //add event to calendar
 
-document.getElementById('addToCalendar').addEventListener('touchstart', function() {
+var addToCalendarButton = document.getElementById('addToCalendar');
+
+function addToCalendarHandler(event){
   var eventDate = '20231229T183000'; // Format: YYYYMMDDTHHMMSS
   var eventName = 'Δημήτρης & Κατερίνα';
   var eventDescription = 'Γάμος Δημήτρη & Κατερίνας';
