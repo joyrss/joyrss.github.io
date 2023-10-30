@@ -58,7 +58,7 @@ function addToCalendarHandler(event){
   link.click();
   
   document.body.removeChild(link);
-});
+};
 
 addToCalendarButton.addEventListener('touchstart', function(event) {
     event.preventDefault(); 
