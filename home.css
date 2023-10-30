@@ -255,6 +255,7 @@ html {
     font-size:18px;
     padding:10px;
     transition: all 0.4s ease-in-out;
+    color: #000;
 }
 .rsvp-form .send-btn button:hover{
     background-color: #d5d5d5;
