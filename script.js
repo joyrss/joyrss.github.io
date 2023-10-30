@@ -26,6 +26,9 @@ if (distance < 0) {
 var addToCalendarButton = document.getElementById('addToCalendar');
 
 function addToCalendarHandler(event){
+var addToCalendarButton = document.getElementById('addToCalendar');
+
+function addToCalendarHandler(event) {
   var eventDate = '20231229T183000'; // Format: YYYYMMDDTHHMMSS
   var eventName = 'Δημήτρης & Κατερίνα';
   var eventDescription = 'Γάμος Δημήτρη & Κατερίνας';
@@ -56,10 +59,8 @@ function addToCalendarHandler(event){
   link.setAttribute('download', 'event.ics');
   document.body.appendChild(link);
   link.click();
-  
-  document.body.removeChild(link);
-  
-};
+
+  };
 
 addToCalendarButton.addEventListener('touchstart', function(event) {
     event.preventDefault(); 
