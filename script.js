@@ -71,7 +71,7 @@ addToCalendarButton.addEventListener('click', addToCalendarHandler);
 //type effect
 
 var i = 0;
-var txt = 'Δημήτρης Παπαγεωργίου & Αικατερίνη Νάνου';
+var txt = 'Δημήτρης & Κατερίνα';
 var typingSpeed = 50; // Controls the number of characters appended in each animation frame
 var animationDuration = 2500; // Total duration of the animation in milliseconds
 var typingElement = document.getElementById("us");
