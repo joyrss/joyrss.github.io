@@ -79,9 +79,13 @@ html {
     position: absolute;
     top: 30px;
     right: 30px;
-    color: #fff;
+    color: #000;
     font-size: 22px;
     text-align: right;
+}
+.menu li:last-of-type{
+    font-weight: 900;
+    text-decoration: underline;
 }
 .date{
     position: absolute;
